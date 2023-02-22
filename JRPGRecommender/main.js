@@ -15,4 +15,17 @@ function generateMessage(){
     console.log(`${descriptions[randomDescription]}in ${games[randomGame]}, releasing in ${years[randomYear]}!`);
 }
 
+const Steam = (name, genre, publisher) => {
+    return {
+        name: name,
+        genre: genre,
+        publisher: publisher
+    }
+};
+
+let gameRecommender = [50];
+gameRecommender[0] = Steam('Tales of Arise', 'JRPG', 'Bandai Namco');
+
+console.log(gameRecommender[0]);
+
 generateMessage();
